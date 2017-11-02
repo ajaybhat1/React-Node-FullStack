@@ -1,0 +1,43 @@
+{
+  "name": "react-node-fullstack",
+  "version": "1.0.0",
+  "description": "First full stack application with React and NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel watch:server watch:build",
+    "watch:build": "webpack --watch",
+    "watch:server": "nodemon --exec ./node_modules/.bin/babel-node server.js --ignore public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaybhat1/React-Node-FullStack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajaybhat1/React-Node-FullStack/issues"
+  },
+  "homepage": "https://github.com/ajaybhat1/React-Node-FullStack#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.9.0",
+    "eslint-plugin-react": "^7.4.0",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "^4.1.1",
+    "webpack": "^3.8.1"
+  }
+}
