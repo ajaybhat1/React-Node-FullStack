@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './Header';
-import Aux from './Aux';
+import Wrp from './Wrp';
 
 class App extends React.Component {
     state = {
@@ -10,12 +10,12 @@ class App extends React.Component {
 
     render() {
         return (
-            <Aux className="App">
+            <Wrp className="App">
                 <Header message={this.state.pageHeader}/>
                 < div >
                     ...
                 </div>
-            </Aux >
+            </Wrp>
         );
     }
 }
